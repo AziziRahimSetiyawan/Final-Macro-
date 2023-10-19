@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            margin: 0;
+        }
+        .header {
+            background-color: #FFFFED;
+            height: 393px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center items vertically */
+            padding: 20px;
+        }
+       
+
+
+
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+
+        .centered-image {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .centered-image img {
+            display: inline-block;
+        }
+        .centered-image img:first-child {
+            margin-right: 30px;
+        }
+        .logout-button-container {
+            position: absolute; /* Position the container absolutely */
+            top: 20px; /* Adjust top and right for positioning */
+            right: 20px;
+        }
+        .logout-button {
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .menu {
+            position: absolute;
+            top: 494px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .menu-button {
+            background-color: #FDF1FF;
+            border-radius: 50px;
+            width: 262px; /* Adjusted width to 262px */
+            height: 43px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding-left: 10px;
+            margin-bottom: 35px;
+            text-decoration: none;
+            color: #000;
+        }
+        .menu-icon {
+            width: 47px;
+            height: 47px;
+            margin-right: 10px;
+        }
+        .menu-button:hover {
+            background-color: #FDF1FF;
+            text-decoration: underline;
+        }
+        .sort-bar {
+            position: absolute;
+            top: 494px;
+            right: 20px;
+        }
+        .sort-bar .custom-select {
+            width: 457px;
+            height: 43px;
+            border-radius: 50px;
+        }
+        .sort-bar .custom-select .custom-option {
+            background-color: #FDF1FF;
+        }
+        .restaurant-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 100px;
+            margin-left: 1px;
+            margin-right: 10px;
+        }
+        .restaurant-img {
+            width: 106px;
+            height: 106px;
+            
+        }
+        .menu-img {
+            width: 109px;
+            height: 94px;
+            margin-right: 15px;
+        }
+        .food-items {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        /* Updated styles for food items */
+        .food-items div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+        }
+
+        .food-items img {
+            width: 109px;
+            height: 94px;
+            margin-bottom: 10px;
+        }
+
+        .food-items p {
+            white-space: nowrap;
+        }
+
+        .restaurant-details {
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        /* Star Rating Styles */
+        .star-rating {
+            font-size: 24px;
+            color: #FFD700;
+        }
+
+        /* Estimated Arrival Time Styles */
+        .estimated-arrival {
+            color: #555;
+        }
+
+        /* Price Styles */
+        .food-price {
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo" style="width: 300px; height: 300px;">
+
+        <div class="centered-image">
+            <img src="prospera.png" alt="Image Middle" style="width: 400px; height: 200px;">
+        </div>
+        <div class="logout-button-container">
+            <button class="logout-button">Keluar</button>
+        </div>
+    </div>
+
+    <div class="logout-button-container">
+        <button class="logout-button">Keluar</button>
+    </div>
+    <div class="menu">
+        <a class="menu-button" href="akun.html">
+            <img src="profil.png" alt="Profil" class="menu-icon">
+            Profil
+        </a>
+        <a class="menu-button" href="notifikasi.html">
+            <img src="notifikasi.jpeg" alt="Notifikasi" class="menu-icon">
+            Notifikasi
+        </a>
+        <a class="menu-button" href="chat.html">
+            <img src="chat.jpeg" alt="Chat" class="menu-icon">
+            Chat
+        </a>
+        <a class="menu-button" href="berhasil.html">
+            <img src="status.jpeg" alt="Status Pemesanan" class="menu-icon">
+            Status Pemesanan
+        </a>
+        <a class="menu-button" href="Community.html">
+            <img src="community.jpeg" alt="Komunitas" class="menu-icon">
+            Komunitas
+        </a>
+        <a class="menu-button" href="prospera terpadu.html">
+            <img src="learn.jpeg" alt="Tempat Belajar" class="menu-icon">
+            Tempat Belajar
+        </a>
+        <a class="menu-button" href="Order History.html">
+            <img src="history.jpeg" alt="Riwayat Pembelian" class="menu-icon">
+            Riwayat Pembelian
+        </a>
+    </div>
+    
+    <div class="sort-bar">
+        <select class="custom-select">
+            <option class="custom-option" value="price">Sortir berdasarkan harga</option>
+            <option class="custom-option" value="location">Sortir berdasarkan lokasi</option>
+            <option class="custom-option" value="rating">Sortir berdasarkan penilaian</option>
+            <option class="custom-option" value="random">Sortir secara acak</option>
+        </select>
+
+        <!-- Food Menu List with Restaurant Names, Images, Ratings, and Prices -->
+        <ul style="margin-top: 72px;">
+            <li class="restaurant-item">
+                <img src="resto.b.png" alt="Restaurant A" class="restaurant-img">
+                <div class="restaurant-details">
+                    <strong class="restaurant-name">Nasi Goreng Seleraku</strong>
+                    <p class="star-rating">★★★★☆</p>
+                    <p class="estimated-arrival">20 mins / 2 km</p>
+                </div>
+                <div class="food-items">
+                    <div>
+                        <img src="nasi.goreng.jawa.png" alt="Nasi Goreng Jawa" class="menu-img">
+                        <p>Nasi Goreng</p>
+                        <p>Jawa</p>
+                        <p class="food-price">IDR 25,000</p>
+                    </div>
+                    <div>
+                        <img src="nasi.goreng.kecap.png" alt="Nasi Goreng Kecap Telor" class="menu-img">
+                        <p>Nasi Goreng </p>
+                        <p>Kecap Telor</p>
+                        <p class="food-price">IDR 30,000</p>
+                    </div>
+                    <div>
+                        <img src="nasi.goreng.bakar.png" alt="Nasi Goreng Bakar" class="menu-img">
+                        <p>Nasi Goreng</p>
+                        <p>Bakar</p>
+                        <p class="food-price">IDR 28,000</p>
+                    </div>
+                    <div>
+                        <img src="nasi.goreng.komplit.png" alt="Nasi Goreng Komplit" class="menu-img">
+                        <p>Nasi Goreng</p>
+                        <p>Komplit</p>
+                        <p class="food-price">IDR 32,000</p>
+                    </div>
+                </div>
+            </li>
+            <li class="restaurant-item">
+                <img src="resto.png" alt="Restaurant B" class="restaurant-img">
+                <div class="restaurant-details">
+                    <strong class="restaurant-name">Aneka Gorengan </strong>
+                    <p class="star-rating">★★★☆☆</p>
+                    <p class="estimated-arrival">30 mins / 4 km</p>
+                </div>
+                <div class="food-items">
+                    <div>
+                        <img src="tahu.png" alt="Tahu Isi Pedas" class="menu-img">
+                        <p>Tahu Isi Pedas</p>
+                        <p class="food-price">IDR 15,000</p>
+                    </div>
+                    <div>
+                        <img src="cireng.png" alt="Cireng" class="menu-img">
+                        <p>Cireng</p>
+                        <p class="food-price">IDR 10,000</p>
+                    </div>
+                    <div>
+                        <img src="tempe.png" alt="Tempe Crispy" class="menu-img">
+                        <p>Tempe Crispy</p>
+                        <p class="food-price">IDR 12,000</p>
+                    </div>
+                    <div>
+                        <img src="pisang.goreng.png" alt="Pisang Goreng" class="menu-img">
+                        <p>Pisang Goreng</p>
+                        <p class="food-price">IDR 8,000</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

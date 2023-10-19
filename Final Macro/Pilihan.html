@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <title>Pilihan Pembayaran</title>
+    <style>
+        body {
+            background-color: #FDF1FF;
+            background-size: 1736px 1130px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #FFFFED;
+            width: 100%;
+            height: 393px;
+            display: flex;
+            justify-content: space between;
+            align-items: center;
+            padding: 20px;
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+        .centered-image {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .centered-image img {
+            display: inline-block;
+        }
+        .image-rectangles-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 502px;
+            left: 21px;
+            right: 21px;
+            /* Remove bottom property to allow the content to stretch to the bottom */
+        }
+        .image-rectangle {
+    background-color: #FFFFFF;
+    width: 1099px;
+    height: 85px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Add this line to make the text bigger */
+}
+
+.image-rectangle:last-child {
+    background-color: #80E59D;
+    font-size: 24px; /* Add this line to make the text bigger */
+}
+        .image-rectangle img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <img src="logo.png" alt="Logo" style="width: 300px; height: 300px;">
+
+       <div class="centered-image">
+           <img src="prospera.png" alt="Image Middle" style="width: 400px; height: 200px;">
+       </div>
+
+    <div class="image-rectangles-container">
+        <div class="image-rectangle" style="background-color: #C993D1;">
+            Pilih Pembayaran
+        </div>
+        <div class="image-rectangle">
+            <img src="dana.png" alt="Image 2" />
+        </div>
+        <div class="image-rectangle">
+            <img src="ovo.png" alt="Image 3" />
+        </div>
+        <div class="image-rectangle">
+            <img src="shopee.png" alt="Image 4" />
+        </div>
+        <div class="image-rectangle">
+            <img src="virtual.png" alt="Image 6" />
+        </div>
+        <div class="image-rectangle" style="background-color: #80E59D;">
+            <a href="berhasil.html">Lanjut</a>
+        </div>
+    </div>
+</body>
+</html>

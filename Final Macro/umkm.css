@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.profile {
+  background: #e2b5e9;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  position: initial;
+  z-index: -100;
+  display: block;
+  padding-top: 10px;
+}
+
+.profile h5 {
+  display: block;
+
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 400;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+}
+.profile .avatar {
+  float: right;
+  display: flex;
+}
+.profile .keranjang {
+  float: right;
+  display: flex;
+  width: 100px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+  width: 650px;
+  margin-bottom: 200px;
+}
+
+.content {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 130px;
+  display: block;
+  float: left;
+  width: 200px;
+  height: 440px;
+  box-shadow: 0 0 2px 0 rgba(176, 70, 185, 0.3); /* Perbaiki nilai box-shadow */
+  background: #c993d1;
+  border-radius: 15px;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(#d580ff);
+  margin-left: 30px;
+}
+
+.content img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.content h2 {
+  font-size: medium;
+  display: contents;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.content pre {
+  font-size: small;
+}
+
+.dashboard {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 0 2px 0 rgba(176, 70, 185, 0.3); /* Perbaiki nilai box-shadow */
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(#d580ff);
+  margin-left: 30px;
+  justify-content: space-between;
+  display: block;
+  float: left;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.dashboard .garis .h {
+  padding-top: 5px;
+  background-color: #d580ff;
+  width: 680px;
+  border: none;
+  justify-content: space-between;
+  display: flex;
+}
+.dashboard .garis .shop-icon img {
+  margin-right: 10px;
+  width: 30px;
+  vertical-align: middle;
+}
+
+.dashboard .garis h3 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 40px;
+}
+
+.dashboard .garis img {
+  color: #d580ff;
+  position: absolute;
+  align-content: end;
+  justify-content: end;
+
+  width: 30px;
+}
+.dashboard .edit img {
+  position: absolute;
+  margin-left: 360px;
+}
+
+.dashboard .garis pre {
+  margin-top: 5px;
+  margin-right: 30px;
+  color: #727272;
+  font-weight: 400;
+  float: right;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+}
+.dashboard h4 {
+  font-size: medium;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-left: 60px;
+  color: #ab64b6;
+  font-weight: 700;
+}
+.dashboard .foto img {
+  width: 150px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9e0fd;
+  font-size: 15;
+  font-family: 'Poppins', sans-serif;
+}
+.card1 h3 {
+  font-size: medium;
+  margin-left: 50px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9e0fd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  width: 60px;
+  font-size: 10px;
+  background-color: #fff;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.produk {
+  background: #f9e0fd;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-top: 20px;
+
+  flex: 0 0 33.33%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.item h2 {
+  margin-left: 60px;
+  margin-top: 120px;
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+}
+
+.produk .item img {
+  width: 100px;
+  margin-left: 60px;
+}
+.footer {
+position: absolute;
+}

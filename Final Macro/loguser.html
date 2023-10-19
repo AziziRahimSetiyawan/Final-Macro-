@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./loguser.css">
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+    <title>login3</title>
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <section class="home">
+        <img class="logo" src="./img/logo.png">
+        <div class="content">
+
+            <a href="#" class="logo"></a>
+            
+            <h2> SELAMAT DATANG DI PROSPERA </h2>
+            <pre> Menyediakan Makanan Sehat dan Nikmat </pre>
+            <div class="icon">
+                <a href="logumkm.html"><button type="button" > Masuk Sebagai UMKM</button></a>
+            </div>
+        </div>
+        <div class="login">
+            <h2> LOGIN </h2>
+            <h3> Selamat datang di Prospera</h3>
+            <div class="input">
+                <input type="username" name="username" id="username" class="input1" placeholder="Email/Username" required>
+                <i class="fa-solid fa-envelope"></i>
+                <a class="pw" href="#"> lupa Password? </a>
+                <input type="password" name="password" id="password" class="input1" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            
+            <div class="check">
+                <label> <input type="checkbox"> Saya Setuju dengan Syarat & Ketentuan dan Pengamanan Privacy </label>
+            
+            <div class="button">
+                <input type="submit" value="Masuk" onclick="index()"> </input>
+            
+            <div class="signup">
+                <p> Belum punya akun? <a href="#"> Silahkan daftar disini </a></p>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+   <script>
+        function index(){
+         var username = document.getElementById("username").value;
+         var password = document.getElementById("password").value;
+        if(username== "admin@gmail.com" && password== "admin123"){
+
+            window.location.assign( "akun.html");
+             alert("Login Berhasil ");
+        }
+         else{
+             alert("Username atau Password Salah ");
+             return;
+         }
+        }
+   </script>
+</body>
+
+</html>
